@@ -10,7 +10,7 @@ function sendEmail(event) {
     var email = document.getElementById("emailInput").value;
     
     Email.send({
-      SecureToken: "2BCAAE2DA78A7A765298E56E3C93C2EE72A3F07B0F6329B0730F05631E10C94FDFBACB9BC85338295F2C8498B0C574E8 ", // Dapatkan dari SMTP.js
+      SecureToken: "ed88c9f2-be4e-4fb6-9651-4947ed6dbf7f ", // Dapatkan dari SMTP.js
       To: 'ilhamsetyaka14@email.com',
       From: "ilhamsetyaka14@gmail.com",
       Subject: "New Contact Form Submission",
