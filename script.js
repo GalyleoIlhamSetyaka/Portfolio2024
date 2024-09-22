@@ -7,17 +7,15 @@ menuIcon.onclick = () => {
 
 function sendEmail(event) {
     event.preventDefault();
-    
     var email = document.getElementById("emailInput").value;
-    var message = document.getElementById("messageInput").value;
     
     Email.send({
-        SecureToken: "d1b02966-189b-4253-85f2-b623ae30dc6d ", // Dapatkan token dari https://smtpjs.com/
-        To: 'ilhamsetyaka14@gmail.com',
-        From: email,
-        Subject: "Pesan baru dari Portfolio Website",
-        Body: message
+      SecureToken: "YOUR_SECURE_TOKEN", // Dapatkan dari SMTP.js
+      To: 'your@email.com',
+      From: "your@elasticemail.com",
+      Subject: "New Contact Form Submission",
+      Body: "Email: " + email
     }).then(
-        message => alert("Pesan terkirim sukses!")
+      message => alert("Email sent successfully")
     );
-}
+  }
