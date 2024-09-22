@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />  </head>
+
+  <body>
+    
+    <header class="header">
+        <a href="#" class="logo"><span> ILHAM SETYAKA</span></a>
+    
+        <ul class="nav-links">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+        
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+
+        <button class="visit-btn" onclick="location.href='https://github.com/GalyleoIlhamSetyaka';" >Visit Github</button>
+    </header>
+
+    <section id="about" class="about">
+        <div class="about-container">
+            <img src="me.png" alt="">
+
+            <div class="info-box">
+                <div class="text">
+                    <h3>Hi i'm</h3>
+                    <h1>ILHAM SETYAKA</h1>
+                    <span>Junior Web Developer</span>
+                </div>
+
+                <div class="btn-group">
+                    <div class="btn">Download CV</div>
+                    <div class="btn">Contact</div>
+                </div>
+
+                <div class="socials">
+                    <i class="fa-brands fa-github" onclick="location.href='https://github.com/GalyleoIlhamSetyaka';"></i>
+                    <i class="fa-brands fa-linkedin" onclick="location.href='https://www.linkedin.com/in/galyleo-ilham-setyaka-bb16a1306/';"></i>
+                    <i class="fa-brands fa-instagram" onclick="location.href='https://www.instagram.com/ilhams.13d/';"></i>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="experience" id="experience">
+
+        <h2 class="section-title">Experience</h2>
+
+        <div class="experince-info">
+
+            <div class="grid">
+
+                <div class="grid-card">
+                    <i class="fa-solid fa-code"></i>
+                    <span>Frontend Development</span>
+                    <h3> 5 Years</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus hic ut totam praesentium laudantium debitis asperiores, neque vitae quod optio consequuntur corrupti officiis veritatis harum beatae adipisci, cumque quidem quibusdam.</p>
+                </div>
+
+                <div class="grid-card">
+                    <i class="fa-brands fa-uikit "></i>
+                    <span>UI/UX Design</span>
+                    <h3> 5 Years</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus hic ut totam praesentium laudantium debitis asperiores, neque vitae quod optio consequuntur corrupti officiis veritatis harum beatae adipisci, cumque quidem quibusdam.</p>
+                </div>
+
+                <div class="grid-card">
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <span>Graphic Desginer</span>
+                    <h3> 5 Years</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus hic ut totam praesentium laudantium debitis asperiores, neque vitae quod optio consequuntur corrupti officiis veritatis harum beatae adipisci, cumque quidem quibusdam.</p>
+                </div>
+                
+            </div>
+        </div>
+
+    </section>
+
+    <section id="projects" class="projects">
+
+        <h2 class="section-title">Recent Project</h2>
+
+        <div class="project-grid">
+
+            <div class="project-card">
+                <img src="me.png" alt="">
+                <h3>Hadi Bengekel</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur magnam dolor hic aliquid fugiat reprehenderit repudiandae repellat necessitatibus minus asperiores ipsam eius ab, ex vel fugit, quidem possimus ipsum explicabo?</p>
+                <div class="btn-group">
+                    <div class="btn">Live Demo</div>
+                    <div class="btn">Github Repo</div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="image.jpg" alt="">
+                <h3>Projcet 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur magnam dolor hic aliquid fugiat reprehenderit repudiandae repellat necessitatibus minus asperiores ipsam eius ab, ex vel fugit, quidem possimus ipsum explicabo?</p>
+                <div class="btn-group">
+                    <div class="btn">Live Demo</div>
+                    <div class="btn">Github Repo</div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="image.jpg" alt="">
+                <h3>Projcet 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur magnam dolor hic aliquid fugiat reprehenderit repudiandae repellat necessitatibus minus asperiores ipsam eius ab, ex vel fugit, quidem possimus ipsum explicabo?</p>
+                <div class="btn-group">
+                    <div class="btn">Live Demo</div>
+                    <div class="btn">Github Repo</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container-box">
+            <button class="more-btn" onclick="location.href='https://github.com/GalyleoIlhamSetyaka';"> MORE PROJECT</button>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        
+        <div class="input-box">
+
+            <div class="section-title">Contact Me</div>
+
+            <form id="contactForm" onsubmit="sendEmail(event)">
+                <div class="input">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" id="emailInput" placeholder="example@gmail.com" required>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+
+        <ul>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#project">Projects</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+
+        <p class="copyright"> All Right Reserved | Galyleo Ilham Setyaka</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </body>
+</html>
