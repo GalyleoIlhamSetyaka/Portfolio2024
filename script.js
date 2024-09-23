@@ -5,19 +5,32 @@ menuIcon.onclick = () => {
     navLinks.classList.toggle('active')
 }
 
-function sendEmail() {
-    var email = document.getElementById("emailInput").value;
-    
-    Email.send({
-      Host: "smtp.elasticemail.com",
-      Username: "ilhamsetyaka14@gmail.com",
-      Password: "2BCAAE2DA78A7A765298E56E3C93C2EE72A3F07B0F6329B0730F05631E10C94FDFBACB9BC85338295F2C8498B0C574E8",
-      To: 'ilhamsetyaka14@email.com',
-      From: "ilhamsetyaka14@gmail.com",
-      Subject: "New Contact Form Submission",
-      Body: "Email: " + email
-    }).then(
-      message => alert(message)
-    );
-  }
-  
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const form = event.target;
+    const data = new FormData(form);
+    const action = form.action;
+
+    fetch(action, {
+        method: 'POST',
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+    }).then(response => {
+        if (response.ok) {
+            alert('Email sent successfully');
+            form.reset();
+        } else {
+            response.json().then(data => {
+                if (Object.hasOwn(data, 'errors')) {
+                    alert(data["errors"].map(error => error["message"]).join(", "));
+                } else {
+                    alert('Oops! There was a problem submitting your form');
+                }
+            });
+        }
+    }).catch(error => {
+        alert('Oops! There was a problem submitting your form');
+    });
+});
