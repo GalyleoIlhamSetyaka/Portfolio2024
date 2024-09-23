@@ -5,8 +5,7 @@ menuIcon.onclick = () => {
     navLinks.classList.toggle('active')
 }
 
-function sendEmail(event) {
-    event.preventDefault();
+function sendEmail() {
     var email = document.getElementById("emailInput").value;
     
     Email.send({

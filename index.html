@@ -139,7 +139,7 @@
 
             <div class="section-title">Contact Me</div>
 
-            <form id="contactForm" onsubmit="sendEmail(event)">
+            <form id="contactForm" onsubmit="sendEmail(); reset(); return false">
                 <div class="input">
                     <i class="fa-solid fa-envelope"></i>
                     <input type="email" id="emailInput" placeholder="example@gmail.com" required>
