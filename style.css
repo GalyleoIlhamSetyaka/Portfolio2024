@@ -303,8 +303,6 @@ section{
     border-radius: 3rem;
     cursor: pointer;
     transition: 0.3s ease-in-out;
-    aspect-ratio: 3 / 2; /* Landscape format */
-    overflow: hidden;
 }
 
 .project-card:hover{
