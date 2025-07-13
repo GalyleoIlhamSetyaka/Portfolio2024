@@ -311,9 +311,11 @@ section{
     transform: translateY(-10px)scale(1.02);
 }
 
-.project-card img{
-    max-width: 50vw;
-    max-height: 20vw;
+.project-card img {
+    width: 100%;
+    height: auto;
+    max-height: 20vw; /* Atur sesuai keinginan */
+    object-fit: contain;
     border-radius: 1rem;
 }
 
